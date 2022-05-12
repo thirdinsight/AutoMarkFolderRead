@@ -1,1 +1,27 @@
-aaa
+== Abstract
+Mozilla Thunderbird Add-on to automatically always keep messages marked as read in some common folders.
+
+Messages are marked as read for the following common folders: junk, trash, drafts, templates.
+
+== When this Add-on might be useful
+IMAP mail providers, such as gmx, automatically move emails to the junk folder, and these emails remain there with the status unread. Thunderbird displays the number of all unread emails next to the account name, although unread emails that are in the junk folder are not relevant to most users. It can therefore make sense to keep all emails in the junk folder marked as read at all times.
+
+Most of the time this makes sense for the trash, drafts, and templates folders as well.
+
+== Motivation
+Unfortunately I couldn't find an Add-on that provides this functionality.
+
+== Functionality
+The `+onFolderInfoChanged+` event is listened to. Unread emails in the corresponding folder are determined and their status is set to read.
+
+I think the functionality should be compatible with other addons.
+
+mailto:mewc@gmx.de[I am grateful] for comments, hints and suggestions.
+
+== Installation
+Zip the entire content of the repository and install the archive in Thunderbird in the `Add-ons Manager` with `Install Add-on from file...`.
+
+== Additional Information
+Currently the folders to which the functionality is applied are hardcoded to the four folders mentioned above. mailto:mewc@gmx.de[I] am open to suggestions for changes and enhancements.
+
+Writing this little add-on has been a great pleasure for me and I would be happy if someone finds it useful as well.
