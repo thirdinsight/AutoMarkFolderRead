@@ -16,10 +16,13 @@ The `+onFolderInfoChanged+` event is listened to. Unread emails in the correspon
 
 I think the functionality should be compatible with other addons.
 
-mailto:mewc@gmx.de[I am grateful] for comments, hints and suggestions.
+mailto:mewc@gmx.de[I am] grateful for comments, hints and suggestions.
 
 == Installation
-Zip the entire content of the repository and install the archive in Thunderbird in the `Add-ons Manager` with `Install Add-on from file...`.
+Zip the content of the src folder and install the archive in Thunderbird in the `Add-ons Manager` with `Install Add-on from file...`.
+
+The default configuration is that the following common folders remain marked as read: junk, trash, drafts, templates.
+Which common folders should be taken into account can be configured in the `Add-on Options` panel.
 
 == Additional Information
 Currently the folders to which the functionality is applied are hardcoded to the four folders mentioned above. mailto:mewc@gmx.de[I] am open to suggestions for changes and enhancements.

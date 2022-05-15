@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "Mark Folder Read",
+	"short_name": "Folder Read",
+    "description": "Automatically always keep messages marked as read in some common folders.",
+    "version": "1.0",
+    "author": "Silvester",
+	"homepage_url": "https://github.com/thirdinsight/MarkFolderRead",
+    "applications": {
+        "gecko": {
+            "id": "markFolderRead.Silvester2584@addons.thunderbird.net",
+            "strict_min_version": "91.0"
+        }
+    },
+	"background": {
+        "scripts": [
+            "js/common.js",
+            "js/background.js"
+        ]
+    },
+	"permissions": [
+		"accountsRead",
+		"messagesRead",
+		"storage"
+	],
+	"icons": {
+		"256": "icon256.png"
+	},
+	"options_ui": {
+		"page": "html/options.html"
+	}
+}
