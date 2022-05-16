@@ -1,0 +1,21 @@
+The icon for this extension is a merge of the following two icons.
+
+= First Icon
+image::Places-mail-folder-inbox-icon.png[link=Places-mail-folder-inbox-icon.png, 64, 64]
+
+Taken from https://iconarchive.com/show/oxygen-icons-by-oxygen-icons.org/Places-mail-folder-inbox-icon.html[IconArchive]:
+image:Places-mail-folder-inbox-icon_screenshot.png[link=Places-mail-folder-inbox-icon_screenshot.png, 100, 100] +
+Taken at May 15th, 2022. +
+License is: GNU Lesser General Public License
+
+= Second Icon
+image::symbol-check-icon.png[link=symbol-check-icon.png, 64, 64]
+
+Taken from https://iconarchive.com/show/blue-bits-icons-by-icojam/symbol-check-icon.html[IconArchive]:
+image:symbol-check-icon_screenshot.png[link=symbol-check-icon_screenshot.png, 100, 100] +
+Taken at May 15th, 2022. +
+License is: Public Domain
+
+= Merged file
+These two icons are merged in the icon256.psd file, each in a seperate layer +
+The image of the icons were not modified.
