@@ -8,7 +8,7 @@
 	"homepage_url": "https://github.com/thirdinsight/MarkFolderRead",
     "applications": {
         "gecko": {
-            "id": "markFolderRead.Silvester2584@addons.thunderbird.net",
+            "id": "markFolderRead.silvester@addons.thunderbird.net",
             "strict_min_version": "91.0"
         }
     },
