@@ -1,30 +1,33 @@
 == Abstract
-Mozilla Thunderbird Add-on to automatically always keep messages marked as read in some common folders.
+Mozilla Thunderbird add-on that automatically marks messages as read in common folders like spam, trash, drafts, templates etc.
+The common folders to be taken into account can be selected in the options panel of the add-on. The folders preselected are: spam, trash, drafts and templates.
 
-Messages are marked as read for the following common folders: junk, trash, drafts, templates.
-
-== When this Add-on might be useful
-IMAP mail providers, such as gmx, automatically move emails to the junk folder, and these emails remain there with the status unread. Thunderbird displays the number of all unread emails next to the account name, although unread emails that are in the junk folder are not relevant to most users. It can therefore make sense to keep all emails in the junk folder marked as read at all times.
-
-Most of the time this makes sense for the trash, drafts, and templates folders as well.
+== Why this extension might be useful?
+IMAP mail providers like gmx automatically move e-mails to the spam folder and these e-mails remain there with the status "unread". Thunderbird shows the accumulated number of ALL unread emails for an account next to the account name. But unread emails, e.g. in the spam folder, are not relevant for most users. It can therefore make sense to automatically mark all e-mails in the spam folder as "read".
 
 == Motivation
-Unfortunately I couldn't find an Add-on that provides this functionality.
+I couldn't find an add-on that provides this functionality.
 
 == Functionality
-The `+onFolderInfoChanged+` event is listened to. Unread emails in the corresponding folder are determined and their status is set to read.
+The onFolderInfoChanged event is listened to. Unread e-mails in the affected folder are determined and their status is set to "read".
+
+The folders to which the functionality is applied are selectable (configurable) in the options panel of the add-on.
+
+To test the functionality, an email in a configured folder (e.g. spam folder) can be marked as unread using the context menu. A very short moment later, this email is automatically marked as read by this add-on.
 
 I think the functionality should be compatible with other addons.
 
-mailto:mewc@gmx.de[I am] grateful for comments, hints and suggestions.
+The source code is on <a href="https://github.com/thirdinsight/AutoMarkFolderRead">Github</a>.
+
+<a href="mailto:mewc@gmx.de">I am</a> grateful for comments, hints and suggestions.
 
 == Installation
-Zip the content of the src folder and install the archive in Thunderbird in the `Add-ons Manager` with `Install Add-on from file...`.
+Zip the content of the src folder and install the archive in Thunderbird's `+Add-ons Manager+` with `+Install Add-on from file...+`.
+
+Or take the already zipped release version from the `+build subfolder+`.
 
 The default configuration is that the following common folders remain marked as read: junk, trash, drafts, templates.
 Which common folders should be taken into account can be configured in the `Add-on Options` panel.
 
 == Additional Information
-Currently the folders to which the functionality is applied are hardcoded to the four folders mentioned above. mailto:mewc@gmx.de[I] am open to suggestions for changes and enhancements.
-
-Writing this little add-on has been a great pleasure for me and I would be happy if someone finds it useful as well.
+This project has no license and lies in the public domain.
