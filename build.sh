@@ -23,8 +23,8 @@ if [ ! -z "$release_version" -a "$release_version" != " " ]; then
 fi
 echo Zip file name is "'$zip_filename'"
 
-rm -f $($application_name)*.xpi
+rm -f build/$(echo $zip_filename)*.xpi
 cd src
 zip -r ../$zip_filename.xpi ./*
 cd ..
-mv $($application_name)*.xpi build
+mv $(echo $zip_filename)*.xpi build
