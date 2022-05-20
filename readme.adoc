@@ -1,5 +1,5 @@
 == Abstract
-Mozilla Thunderbird add-on that automatically marks messages as read in common folders like spam, trash, drafts, templates etc.+
+Mozilla Thunderbird add-on that automatically marks messages as read in common folders like spam, trash, drafts, templates etc. +
 The common folders to be taken into account can be selected in the options panel of the add-on. The folders preselected are: spam, trash, drafts and templates.
 
 == Why this extension might be useful?
