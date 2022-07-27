@@ -3,7 +3,7 @@
     "name": "Auto-Mark Folder Read",
 	"short_name": "AutoMarkRead",
     "description": "Automatically always keep messages marked as read in some common folders.",
-    "version": "1.1",
+    "version": "1.2",
     "author": "Silvester",
 	"homepage_url": "https://github.com/thirdinsight/AutoMarkFolderRead",
     "applications": {
