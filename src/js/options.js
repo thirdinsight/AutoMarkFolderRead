@@ -23,10 +23,10 @@ function saveOptions(event) {
     }
   };
   
-  console.log("Saving common folders options with sync storage: " + JSON.stringify(commonFolders));
+  console.log("Saving common folders options with local storage: " + JSON.stringify(commonFolders));
   
-  messenger.storage.sync.set(commonFolders)
-    .catch(e => {console.log("Exception occured in promise when saving synched common folder options: " + e);});
+  messenger.storage.local.set(commonFolders)
+    .catch(e => {console.log("Exception occured in promise when saving locally stored common folder options: " + e);});
 
   event.preventDefault();
 }
