@@ -25,7 +25,7 @@ function saveOptions(event) {
   
   console.log("Saving common folders options with local storage: " + JSON.stringify(commonFolders));
   
-  messenger.storage.local.set(commonFolders)
+  browser.storage.local.set(commonFolders)
     .catch(e => {console.log("Exception occured in promise when saving locally stored common folder options: " + e);});
 
   event.preventDefault();

@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	console.log("background: addon loaded");
 	
 	// register a storage.onChanged event and update the global variable.
-	messenger.storage.onChanged.addListener((storageChange, areaName) => {
+	browser.storage.onChanged.addListener((storageChange, areaName) => {
 		// I think it is not important from which area the changes come.
 		
 		console.log("extension storage change event received: areaName is '" + areaName + "', storageChange is '" + JSON.stringify(storageChange) + "'");
@@ -18,19 +18,19 @@ document.addEventListener("DOMContentLoaded", () => {
 	// load options as in restoreOptions() and store it in a global var variable.
 	loadCommonFoldersOptions().then((result) => {commonFolders = result;});
 	
-	messenger.folders.onFolderInfoChanged.addListener((folder, folderInfo) => {
+	browser.folders.onFolderInfoChanged.addListener((folder, folderInfo) => {
 		if (!commonFolders) {
-			// There are no common folders configured to be marked as read (or this is an error)
+			// There are no common folders configured to be marked as read (or this is an error situation)
 			return;
 		}
 		
 		if (commonFolders[folder.type]) {
 			if (folderInfo.unreadMessageCount > 0) {
 				
-				messenger.messages.query({"folder": folder, "unread": true}).then(
+				browser.messages.query({"folder": folder, "unread": true, "includeSubFolders": true}).then(
 					(messageList) => {
 						for (let message of messageList.messages) {
-							messenger.messages.update(message.id, {"read": true});
+							browser.messages.update(message.id, {"read": true});
 						}
 					},
 					(error) => {

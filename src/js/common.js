@@ -10,7 +10,7 @@ function buildDefaultCommonFolders() {
 async function loadCommonFoldersOptions() {
   let commonFolders = buildDefaultCommonFolders();
 
-  let result = await messenger.storage.local.get('commonFolders');
+  let result = await browser.storage.local.get('commonFolders');
   
 	console.log("Result loaded from local storage: " + JSON.stringify(result));
 	
