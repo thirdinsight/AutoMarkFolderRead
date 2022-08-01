@@ -1,6 +1,34 @@
 // globally stored common folders that will be automatically marked as read
 var commonFolders;
 
+/**
+	Returns true if the given folder is a common folder (selected in options panel) or if it resides inside a common folder (selected) and false otherwise. 
+ */
+async function isInsideCommonFolder(folder) {
+	// If there are no common folders selected in the options panel then the folder cannot be in a common folder or it must be ignored.
+	if (!commonFolders) {
+		return false;
+	}
+	
+	// If the given folder is itself a common folder then it is found and true is returned.
+	if (commonFolders[folder.type]) {
+//		console.log("Processing 'onFolderInfoChanged' for folder '" + JSON.stringify(folder) + "'");
+		return true;
+	}
+
+	// Otherwise the parent folders are inspected to see if the given folder is inside a common folder.
+	let parentMailFolders = await browser.folders.getParentFolders(folder, false);
+//	console.log("Processing 'onFolderInfoChanged' for folder '" + JSON.stringify(folder) + "' with parent folders '" + JSON.stringify(parentMailFolders) + "'");
+		
+	for (const parentMailFolder of parentMailFolders){
+	   	if (commonFolders[parentMailFolder.type]) {
+	   		return true;
+	   	}
+	}
+	
+	return false;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
 	console.log("background: addon loaded");
 	
@@ -24,8 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
 			return;
 		}
 		
-		if (commonFolders[folder.type]) {
-			if (folderInfo.unreadMessageCount > 0) {
+		isInsideCommonFolder(folder).then(isInside => {
+			if (isInside && folderInfo.unreadMessageCount > 0) {
 				
 				browser.messages.query({"folder": folder, "unread": true, "includeSubFolders": true}).then(
 					(messageList) => {
@@ -34,10 +62,10 @@ document.addEventListener("DOMContentLoaded", () => {
 						}
 					},
 					(error) => {
-						console.error("background: " + folder.type + "-folder: " + error);
+						console.error("background: " + folder + "-folder: " + error);
 					}
 				);
 			}
-		}
+		});
 	})
 });
