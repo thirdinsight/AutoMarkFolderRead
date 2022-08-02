@@ -9,7 +9,12 @@ function fillUIWithCommonFolderOptions(commonFolders) {
   document.querySelector("#outboxCheckbox").checked = commonFolders.outbox ? commonFolders.outbox : false;
 }
 
+function fillUIWithIncludeSubfoldersOption(includeSubfolders) {
+  document.querySelector("#includeSubfoldersCheckbox").checked = includeSubfolders ? includeSubfolders : false;
+}
+
 function saveOptions(event) {
+  // ********** common folder options
   let commonFolders = {
 	commonFolders: {
       inbox: document.querySelector("#inboxCheckbox").checked,
@@ -28,11 +33,22 @@ function saveOptions(event) {
   browser.storage.local.set(commonFolders)
     .catch(e => {console.log("Exception occured in promise when saving locally stored common folder options: " + e);});
 
+  // ********** include subfolders option
+  let includeSubfolders = {
+	includeSubfolders: document.querySelector("#includeSubfoldersCheckbox").checked
+  };
+
+  console.log("Saving include subfolders option with local storage: " + JSON.stringify(includeSubfolders));
+
+  browser.storage.local.set(includeSubfolders)
+    .catch(e => {console.log("Exception occured in promise when saving locally stored \"includeSubfolders\" option: " + e);});
+  
   event.preventDefault();
 }
 
 function restoreOptions() {
 	loadCommonFoldersOptions().then((commonFolders) => {fillUIWithCommonFolderOptions(commonFolders);});
+	loadIncludeSubfoldersOption().then((includeSubfolders) => {fillUIWithIncludeSubfoldersOption(includeSubfolders);});
 }
 
 document.addEventListener('DOMContentLoaded', restoreOptions);

@@ -2,46 +2,73 @@
 
 <html>
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="options.css" />
   </head>
 
   <body>
     <form>
-	  <span>Common folders:</span>
-	  <div>
-		<input type="checkbox" id="inboxCheckbox" name="inbox">
-        <label>Inbox</label>
+      <div class="commonFolders">
+        <div class="header">
+          <span>Common folders:</span>
+        </div>
+        
+        <div class="checkBoxes">
+          <div class="container">
+            <input type="checkbox" id="inboxCheckbox" name="inbox">
+            <label>Inbox</label>
+          </div>
+          <div class="container">
+            <input type="checkbox" id="draftsCheckbox" name="drafts">
+            <label>Drafts</label>
+          </div>
+          <div class="container">
+            <input type="checkbox" id="sentCheckbox" name="send">
+            <label>Sent</label>
+          </div>
+          <div class="container">
+            <input type="checkbox" id="trashCheckbox" name="trash">
+            <label>Trash</label>
+          </div>
+          <div class="container">
+            <input type="checkbox" id="templatesCheckbox" name="templates">
+            <label>Templates</label>
+          </div>
+          <div class="container">
+            <input type="checkbox" id="archivesCheckbox" name="archives">
+            <label>Archives</label>
+          </div>
+          <div class="container">
+            <input type="checkbox" id="junkCheckbox" name="junk">
+            <label>Junk</label>
+          </div>
+          <div class="container">
+            <input type="checkbox" id="outboxCheckbox" name="outbox">
+            <label>Outbox</label>
+          </div>
+          
+          <div class="footNote">
+            <span>Notice: The names shown above are only identifiers for common folders.<br/>
+                  The actual names of the folders might be different. For example: The actual name of the inbox could be "Posteingang" (if you live in Germany).<br/>
+                  For the most part, the actual names for common folders can be configured in the account settings.</span>
+          </div>
+        </div>
+        
+        <div class="subfolders">
+          <div class="container">
+            <input type="checkbox" id="includeSubfoldersCheckbox" name="includeSubfolders">
+            <label>Include Subfolders</label>
+          </div>
+          
+          <div class="footNote">
+            <span>Notice: If checked, emails in all subfolders will also be marked as read.</span>
+          </div>
+        </div>
+        
+        <button type="submit" class="saveButton">Save</button>
       </div>
-	  <div>
-		<input type="checkbox" id="draftsCheckbox" name="drafts">
-        <label>Drafts</label>
-      </div>
-	  <div>
-		<input type="checkbox" id="sentCheckbox" name="send">
-        <label>Sent</label>
-      </div>
-	  <div>
-		<input type="checkbox" id="trashCheckbox" name="trash">
-        <label>Trash</label>
-      </div>
-	  <div>
-		<input type="checkbox" id="templatesCheckbox" name="templates">
-        <label>Templates</label>
-      </div>
-	  <div>
-		<input type="checkbox" id="archivesCheckbox" name="archives">
-        <label>Archives</label>
-      </div>
-	  <div>
-		<input type="checkbox" id="junkCheckbox" name="junk">
-        <label>Junk</label>
-      </div>
-	  <div>
-		<input type="checkbox" id="outboxCheckbox" name="outbox">
-        <label>Outbox</label>
-      </div>
-      <button type="submit">Save</button>
     </form>
+    
     <script src="../js/common.js"></script>
     <script src="../js/options.js"></script>
   </body>

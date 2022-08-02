@@ -1,0 +1,37 @@
+body {
+  margin: 10px 20px;
+}
+form {
+  
+}
+
+.commonFolders {
+  
+}
+.commonFolders .header {
+  padding-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.commonFolders .checkBoxes {
+  padding-bottom: 1.2em;
+}
+.commonFolders .checkBoxes .container {
+  padding-bottom: 0.2em;
+}
+.commonFolders .checkBoxes .footNote {
+  font-size: 0.8em;
+}
+
+.commonFolders .subfolders {
+  padding-bottom: 1.2em;
+}
+.commonFolders .subfolders .container {
+  padding-bottom: 0.2em;
+}
+.commonFolders .subfolders .footNote {
+  font-size: 0.8em;
+}
+
+form .saveButton {
+}
