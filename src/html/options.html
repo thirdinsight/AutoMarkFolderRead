@@ -10,7 +10,17 @@
     <form>
       <div class="commonFolders">
         <div class="header">
-          <span>Common folders:</span>
+          <span class="text">Common folders:</span>
+          <span class="info tooltip">
+            <span>Choose common folders where messages will automatically be marked as read.<br/>
+              <span class="finePrint">
+                <br/>
+                Notice: The names shown here are identifiers for common folders.<br/>
+                The actual names of the folders might be different. For example: The actual name of the common archives folder might be "Archiv" (if you live in Germany).<br/>
+                Common folder names are configurable in the account settings.
+              </span>
+            </span>
+          </span>
         </div>
         
         <div class="checkBoxes">
@@ -46,22 +56,15 @@
             <input type="checkbox" id="outboxCheckbox" name="outbox">
             <label>Outbox</label>
           </div>
-          
-          <div class="footNote">
-            <span>Notice: The names shown above are only identifiers for common folders.<br/>
-                  The actual names of the folders might be different. For example: The actual name of the inbox could be "Posteingang" (if you live in Germany).<br/>
-                  For the most part, the actual names for common folders can be configured in the account settings.</span>
-          </div>
         </div>
         
         <div class="subfolders">
           <div class="container">
             <input type="checkbox" id="includeSubfoldersCheckbox" name="includeSubfolders">
             <label>Include Subfolders</label>
-          </div>
-          
-          <div class="footNote">
-            <span>Notice: If checked, emails in all subfolders will also be marked as read.</span>
+            <span class="info tooltip">
+              <span>If checked, messages in subfolders will also be marked as read.</span>
+            </span>
           </div>
         </div>
         

@@ -19,3 +19,11 @@ License is: Public Domain
 = Merged file
 These two icons are merged in the icon256.psd file, each in a seperate layer +
 The image of the icons were not modified.
+
+= Info Icon
+image::info-icon.png[link=info-icon.png, 32, 32]
+
+Taken from https://iconarchive.com/show/basic-icons-by-pixelmixer/info-icon.html[IconArchive]:
+image:info-icon_screenshot.png[link=info-icon_screenshot.png, 100, 100] +
+Taken at August 6th, 2022. +
+License is: Freeware

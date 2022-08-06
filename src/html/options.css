@@ -10,7 +10,17 @@ form {
 }
 .commonFolders .header {
   padding-bottom: 0.5em;
+}
+
+.commonFolders .header .text {
   font-weight: bold;
+  font-size: 1.1em;
+}
+.commonFolders .header .info.tooltip:hover span {
+  width: 30em;
+  top: -2em;
+  font:normal;
+  font-weight: normal;
 }
 
 .commonFolders .checkBoxes {
@@ -19,9 +29,6 @@ form {
 .commonFolders .checkBoxes .container {
   padding-bottom: 0.2em;
 }
-.commonFolders .checkBoxes .footNote {
-  font-size: 0.8em;
-}
 
 .commonFolders .subfolders {
   padding-bottom: 1.2em;
@@ -29,9 +36,50 @@ form {
 .commonFolders .subfolders .container {
   padding-bottom: 0.2em;
 }
-.commonFolders .subfolders .footNote {
-  font-size: 0.8em;
+.commonFolders .subfolders .container .info.tooltip:hover span {
+  width: 19em;
+  top: -2em;
 }
 
 form .saveButton {
+}
+
+.finePrint {
+  font-size: 0.75em;
+}
+
+span.info {
+  background:url('info-icon.png') no-repeat;
+  background-size: 16px 16px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  position: relative;
+  top: 0.15em;
+  left: 0.2em;
+}
+
+span.tooltip {
+/*   border-bottom: 1px dashed; */ /* may be useful for text only to have a dashed underline */
+  text-decoration: none;
+}
+span.tooltip:hover {
+  position: relative;
+}
+span.tooltip > span:first-child {
+  display: none;
+}
+span.tooltip:hover > span:first-child {
+  border: #666 2px dotted;
+  border-radius: 15px;
+  padding: 7px 10px 7px 13px;
+  display: block;
+  z-index: 100;
+  background: #ffe179;
+  left: 1em;
+  margin: 15px;
+  width: 400px;
+  position: absolute;
+  top: 15px;
+  text-decoration: none;
 }

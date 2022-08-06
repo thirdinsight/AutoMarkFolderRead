@@ -6,7 +6,7 @@ The common folders to be taken into account can be selected in the options panel
 IMAP mail providers like gmx automatically move e-mails to the spam folder and these e-mails remain there with the status "unread". Thunderbird shows the accumulated number of ALL unread emails for an account next to the account name. But unread emails, e.g. in the spam folder, are not relevant for most users. It can therefore make sense to automatically mark all e-mails in the spam folder as "read".
 
 == Motivation
-I couldn't find an add-on that provides this functionality.
+I couldn't find an add-on that provided this functionality.
 
 == Functionality
 The onFolderInfoChanged event is listened to. Unread e-mails in the affected folder are determined and their status is set to "read".

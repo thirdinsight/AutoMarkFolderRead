@@ -1,16 +1,16 @@
 function fillUIWithCommonFolderOptions(commonFolders) {
-  document.querySelector("#inboxCheckbox").checked = commonFolders.inbox ? commonFolders.inbox : false;
-  document.querySelector("#draftsCheckbox").checked = commonFolders.drafts ? commonFolders.drafts : false;
-  document.querySelector("#sentCheckbox").checked = commonFolders.sent ? commonFolders.sent : false;
-  document.querySelector("#trashCheckbox").checked = commonFolders.trash ? commonFolders.trash : false;
-  document.querySelector("#templatesCheckbox").checked = commonFolders.templates ? commonFolders.templates : false;
-  document.querySelector("#archivesCheckbox").checked = commonFolders.archives ? commonFolders.archives : false;
-  document.querySelector("#junkCheckbox").checked = commonFolders.junk ? commonFolders.junk : false;
-  document.querySelector("#outboxCheckbox").checked = commonFolders.outbox ? commonFolders.outbox : false;
+  document.querySelector("#inboxCheckbox").checked = commonFolders.inbox ? commonFolders.inbox == true : false;
+  document.querySelector("#draftsCheckbox").checked = commonFolders.drafts ? commonFolders.drafts == true : false;
+  document.querySelector("#sentCheckbox").checked = commonFolders.sent ? commonFolders.sent == true : false;
+  document.querySelector("#trashCheckbox").checked = commonFolders.trash ? commonFolders.trash == true : false;
+  document.querySelector("#templatesCheckbox").checked = commonFolders.templates ? commonFolders.templates == true : false;
+  document.querySelector("#archivesCheckbox").checked = commonFolders.archives ? commonFolders.archives == true : false;
+  document.querySelector("#junkCheckbox").checked = commonFolders.junk ? commonFolders.junk == true : false;
+  document.querySelector("#outboxCheckbox").checked = commonFolders.outbox == true ? commonFolders.outbox : false;
 }
 
 function fillUIWithIncludeSubfoldersOption(includeSubfolders) {
-  document.querySelector("#includeSubfoldersCheckbox").checked = includeSubfolders ? includeSubfolders : false;
+  document.querySelector("#includeSubfoldersCheckbox").checked = includeSubfolders == true ? includeSubfolders : false;
 }
 
 function saveOptions(event) {
