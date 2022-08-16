@@ -1,0 +1,77 @@
+{
+  "extensionName": {
+    "message": "Ordner automatisch als gelesen markieren",
+    "description": "Name des Add-ons."
+  },
+
+  "extensionShortName": {
+    "message": "AutoMarkRead",
+    "description": "Kurzname des Add-ons."
+  },
+
+  "extensionDescription": {
+    "message": "Neue Nachrichten werden in ausgewählten Standard-Ordnern automatisch als gelesen markiert.",
+    "description": "Beschreibung des Add-ons."
+  },
+
+
+  "commonFoldersCheckboxes.header": {
+    "message": "Standard-Ordner:",
+    "description": "Die Überschrift des Bereiches der Kontrollkästchens, in dem Standard-Ordner ausgewählt werden können."
+  },
+  "commonFoldersCheckboxes.info.toolTip": {
+    "message": "Auswahl von Ordnern, in denen Nachrichten automatisch als gelesen markiert werden.",
+    "description": "Der text des Informations-Tooltips."
+  },
+  "commonFoldersCheckboxes.info.toolTip.footNote": {
+    "message": "<br/><br/>Hinweis: Die hier aufgeführten Namen sind Bezeichnungen für Standard-Ordner.<br/>Die tatsächlichen Namen der Ordner können anders lauten. Zum Beispiel: Der tatsächliche Name des Papierkorb Ordners könnte \"Gelöscht\" oder im englischsprachigen \"Trash\" lauten.<br/>Die tatsächlichen Namen der Standard-Ordner sind in den Kontoeinstellungen änderbar.",
+    "description": "Die Fußnote des Informations-Tooltips"
+  },
+
+  "commonFoldersCheckboxes.checkBox.inbox": {
+    "message": "Posteingang",
+    "description": "The Bezeichnung eines Auswahlkontrollkästchens für Standard-Ordner."
+  },
+  "commonFoldersCheckboxes.checkBox.drafts": {
+    "message": "Entwürfe",
+    "description": "The Bezeichnung eines Auswahlkontrollkästchens für Standard-Ordner."
+  },
+  "commonFoldersCheckboxes.checkBox.sent": {
+    "message": "Gesendet",
+    "description": "The Bezeichnung eines Auswahlkontrollkästchens für Standard-Ordner."
+  },
+  "commonFoldersCheckboxes.checkBox.trash": {
+    "message": "Papierkorb",
+    "description": "The Bezeichnung eines Auswahlkontrollkästchens für Standard-Ordner."
+  },
+  "commonFoldersCheckboxes.checkBox.templates": {
+    "message": "Vorlagen",
+    "description": "The Bezeichnung eines Auswahlkontrollkästchens für Standard-Ordner."
+  },
+  "commonFoldersCheckboxes.checkBox.archives": {
+    "message": "Archiv",
+    "description": "The Bezeichnung eines Auswahlkontrollkästchens für Standard-Ordner."
+  },
+  "commonFoldersCheckboxes.checkBox.junk": {
+    "message": "Spamverdacht",
+    "description": "The Bezeichnung eines Auswahlkontrollkästchens für Standard-Ordner."
+  },
+  "commonFoldersCheckboxes.checkBox.outbox": {
+    "message": "Postausgang",
+    "description": "The Bezeichnung eines Auswahlkontrollkästchens für Standard-Ordner."
+  },
+  
+  "includeSubfolders.checkBox.label": {
+    "message": "Unterordner einbeziehen",
+    "description": "Die Bezeichnung des Kontrollkästchens zur Entscheidung, ob Unterordner berücksichtigt werden sollen."
+  },
+  "includeSubfolders.info.toolTip": {
+    "message": "Wenn diese Option aktiviert ist, werden Nachrichten in Unterordnern ebenfalls als gelesen markiert.",
+    "description": "Die Tooltip informationsmeldung zur Beschreibung des Kontrollkästchens."
+  },
+  
+  "saveOptionsButton.label": {
+    "message": "Speichern",
+    "description": "Beschriftung für die Schaltfläche, die alle Einstellungen sichert."
+  }
+}

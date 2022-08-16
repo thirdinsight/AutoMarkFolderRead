@@ -12,14 +12,14 @@ async function isInsideCommonFolder(folder, includeSubfolders) {
 	
 	// If the given folder is itself a common folder then it is found and true is returned.
 	if (commonFolders[folder.type]) {
-//		console.log("Processing 'onFolderInfoChanged' for folder '" + JSON.stringify(folder) + "'");
+//		console.info("Processing 'onFolderInfoChanged' for folder '" + JSON.stringify(folder) + "'");
 		return true;
 	}
 	
 	if (includeSubfolders) {
 		// Otherwise the parent folders are inspected to see if the given folder is inside a common folder.
 		let parentMailFolders = await messenger.folders.getParentFolders(folder, false);
-//	console.log("Processing 'onFolderInfoChanged' for folder '" + JSON.stringify(folder) + "' with parent folders '" + JSON.stringify(parentMailFolders) + "'");
+//	console.info("Processing 'onFolderInfoChanged' for folder '" + JSON.stringify(folder) + "' with parent folders '" + JSON.stringify(parentMailFolders) + "'");
 			
 		for (const parentMailFolder of parentMailFolders){
 		   	if (commonFolders[parentMailFolder.type]) {
@@ -57,13 +57,13 @@ async function onFolderInfoChangedListener(folder, folderInfo) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-	console.log("background: addon loaded");
+	console.info("background: addon loaded");
 	
 	// register a storage.onChanged event and update the global variable.
 	browser.storage.onChanged.addListener((storageChange, areaName) => {
 		// I think it is not important from which area the changes come.
 		
-		console.log("extension storage change event received: areaName is '" + areaName + "', storageChange is '" + JSON.stringify(storageChange) + "'");
+		console.info("extension storage change event received: areaName is '" + areaName + "', storageChange is '" + JSON.stringify(storageChange) + "'");
 		
 		if (storageChange.hasOwnProperty("commonFolders") && Object.keys(storageChange.commonFolders.newValue).length > 0) {
 			commonFolders = storageChange.commonFolders.newValue;

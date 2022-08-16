@@ -16,15 +16,15 @@ async function loadCommonFoldersOptions() {
 
   let result = await browser.storage.local.get('commonFolders');
   
-	console.log("CommonFoldersOptions result loaded from local storage: " + JSON.stringify(result));
+	console.info("CommonFoldersOptions result loaded from local storage: " + JSON.stringify(result));
 	
 	if (result.hasOwnProperty("commonFolders") && Object.keys(result.commonFolders).length > 0) {
 	  commonFolders = result.commonFolders
 	  
-	  console.log("Using commonFoldersOptions loaded from local storage: " + JSON.stringify(commonFolders));
+	  console.info("Using commonFoldersOptions loaded from local storage: " + JSON.stringify(commonFolders));
 	}
 	else {
-	  console.log("Using default commonFoldersOptions: " + JSON.stringify(commonFolders));
+	  console.info("Using default commonFoldersOptions: " + JSON.stringify(commonFolders));
 	}
 	
 	return commonFolders;
@@ -35,15 +35,15 @@ async function loadIncludeSubfoldersOption() {
 
   let result = await browser.storage.local.get('includeSubfolders');
   
-	console.log("IncludeSubfoldersOption result loaded from local storage: " + JSON.stringify(result));
+	console.info("IncludeSubfoldersOption result loaded from local storage: " + JSON.stringify(result));
 	
 	if (result.hasOwnProperty("includeSubfolders")) {
 	  includeSubfolders = result.includeSubfolders
 	  
-	  console.log("Using includeSubfoldersOption loaded from local storage: " + JSON.stringify(includeSubfolders));
+	  console.info("Using includeSubfoldersOption loaded from local storage: " + JSON.stringify(includeSubfolders));
 	}
 	else {
-	  console.log("Using default includeSubfoldersOption: " + JSON.stringify(includeSubfolders));
+	  console.info("Using default includeSubfoldersOption: " + JSON.stringify(includeSubfolders));
 	}
 	
 	return includeSubfolders;

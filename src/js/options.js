@@ -28,20 +28,20 @@ function saveOptions(event) {
     }
   };
   
-  console.log("Saving common folders options with local storage: " + JSON.stringify(commonFolders));
+  console.info("Saving common folders options with local storage: " + JSON.stringify(commonFolders));
   
   browser.storage.local.set(commonFolders)
-    .catch(e => {console.log("Exception occured in promise when saving locally stored common folder options: " + e);});
+    .catch(e => {console.info("Exception occured in promise when saving locally stored common folder options: " + e);});
 
   // ********** include subfolders option
   let includeSubfolders = {
 	includeSubfolders: document.querySelector("#includeSubfoldersCheckbox").checked
   };
 
-  console.log("Saving include subfolders option with local storage: " + JSON.stringify(includeSubfolders));
+  console.info("Saving include subfolders option with local storage: " + JSON.stringify(includeSubfolders));
 
   browser.storage.local.set(includeSubfolders)
-    .catch(e => {console.log("Exception occured in promise when saving locally stored \"includeSubfolders\" option: " + e);});
+    .catch(e => {console.info("Exception occured in promise when saving locally stored \"includeSubfolders\" option: " + e);});
   
   event.preventDefault();
 }

@@ -10,13 +10,14 @@
     <form>
       <div class="commonFolders">
         <div class="header">
-          <span class="text">Common folders:</span>
+          <span class="text" messageKey="commonFoldersCheckboxes.header">Common folders:</span>
           <span class="info tooltip">
-            <span>Choose common folders where messages will automatically be marked as read.<br/>
-              <span class="finePrint">
-                <br/>
+            <span>
+              <span messageKey="commonFoldersCheckboxes.info.toolTip">Selection of folders where messages should be marked as read.</span>
+              <span class="finePrint" messageKey="commonFoldersCheckboxes.info.toolTip.footNote">
+                <br/><br/>
                 Notice: The names shown here are identifiers for common folders.<br/>
-                The actual names of the folders might be different. For example: The actual name of the common archives folder might be "Archiv" (if you live in Germany).<br/>
+                The actual names of the folders might be different. For example: The actual name of the Archives folder might be "Archiv" (if you live in Germany).<br/>
                 Common folder names are configurable in the account settings.
               </span>
             </span>
@@ -26,53 +27,54 @@
         <div class="checkBoxes">
           <div class="container">
             <input type="checkbox" id="inboxCheckbox" name="inbox">
-            <label>Inbox</label>
+            <label messageKey="commonFoldersCheckboxes.checkBox.inbox">Inbox</label>
           </div>
           <div class="container">
             <input type="checkbox" id="draftsCheckbox" name="drafts">
-            <label>Drafts</label>
+            <label messageKey="commonFoldersCheckboxes.checkBox.drafts">Drafts</label>
           </div>
           <div class="container">
-            <input type="checkbox" id="sentCheckbox" name="send">
-            <label>Sent</label>
+            <input type="checkbox" id="sentCheckbox" name="sent">
+            <label messageKey="commonFoldersCheckboxes.checkBox.sent">Sent</label>
           </div>
           <div class="container">
             <input type="checkbox" id="trashCheckbox" name="trash">
-            <label>Trash</label>
+            <label messageKey="commonFoldersCheckboxes.checkBox.trash">Trash</label>
           </div>
           <div class="container">
             <input type="checkbox" id="templatesCheckbox" name="templates">
-            <label>Templates</label>
+            <label messageKey="commonFoldersCheckboxes.checkBox.templates">Templates</label>
           </div>
           <div class="container">
             <input type="checkbox" id="archivesCheckbox" name="archives">
-            <label>Archives</label>
+            <label messageKey="commonFoldersCheckboxes.checkBox.archives">Archives</label>
           </div>
           <div class="container">
             <input type="checkbox" id="junkCheckbox" name="junk">
-            <label>Junk</label>
+            <label messageKey="commonFoldersCheckboxes.checkBox.junk">Junk</label>
           </div>
           <div class="container">
             <input type="checkbox" id="outboxCheckbox" name="outbox">
-            <label>Outbox</label>
+            <label messageKey="commonFoldersCheckboxes.checkBox.outbox">Outbox</label>
           </div>
         </div>
         
         <div class="subfolders">
           <div class="container">
             <input type="checkbox" id="includeSubfoldersCheckbox" name="includeSubfolders">
-            <label>Include Subfolders</label>
+            <label messageKey="includeSubfolders.checkBox.label">Include Subfolders</label>
             <span class="info tooltip">
-              <span>If checked, messages in subfolders will also be marked as read.</span>
+              <span messageKey="includeSubfolders.info.toolTip">If checked, messages in subfolders will also be marked as read.</span>
             </span>
           </div>
         </div>
         
-        <button type="submit" class="saveButton">Save</button>
+        <button type="submit" class="saveButton" messageKey="saveOptionsButton.label">Save</button>
       </div>
     </form>
     
     <script src="../js/common.js"></script>
     <script src="../js/options.js"></script>
+    <script src="../js/i18n.js"></script>
   </body>
 </html>

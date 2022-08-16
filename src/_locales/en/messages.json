@@ -1,0 +1,74 @@
+{
+  "extensionName": {
+    "message": "Auto-Mark Folder Read",
+    "description": "Name of the extension."
+  },
+  "extensionShortName": {
+    "message": "AutoMarkRead",
+    "description": "Short name of the extension."
+  },
+  "extensionDescription": {
+    "message": "New messages in chosen common folders are automatically marked as read.",
+    "description": "Description of the extension."
+  },
+
+  "commonFoldersCheckboxes.header": {
+    "message": "Common folders:",
+    "description": "The header (title) of the check box area where to choose common folders."
+  },
+  "commonFoldersCheckboxes.info.toolTip": {
+    "message": "Selection of folders in which messages are automatically marked as read.",
+    "description": "The text of the info tool tip."
+  },
+  "commonFoldersCheckboxes.info.toolTip.footNote": {
+    "message": "<br/><br/>Notice: The names shown here are identifiers for common folders.<br/>The actual names of the folders might be different. For example: The actual name of the common archives folder might be \"Archiv\" (if you live in Germany).<br/>Actual names of common folders are configurable in the account settings.",
+    "description": "The foot note of the info tool tip."
+  },
+
+  "commonFoldersCheckboxes.checkBox.inbox": {
+    "message": "Inbox",
+    "description": "The label of a common folder check box."
+  },
+  "commonFoldersCheckboxes.checkBox.drafts": {
+    "message": "Drafts",
+    "description": "The label of a common folder check box."
+  },
+  "commonFoldersCheckboxes.checkBox.sent": {
+    "message": "Sent",
+    "description": "The label of a common folder check box."
+  },
+  "commonFoldersCheckboxes.checkBox.trash": {
+    "message": "Trash",
+    "description": "The label of a common folder check box."
+  },
+  "commonFoldersCheckboxes.checkBox.templates": {
+    "message": "Templates",
+    "description": "The label of a common folder check box."
+  },
+  "commonFoldersCheckboxes.checkBox.archives": {
+    "message": "Archives",
+    "description": "The label of a common folder check box."
+  },
+  "commonFoldersCheckboxes.checkBox.junk": {
+    "message": "Junk",
+    "description": "The label of a common folder check box."
+  },
+  "commonFoldersCheckboxes.checkBox.outbox": {
+    "message": "Outbox",
+    "description": "The label of a common folder check box."
+  },
+  
+  "includeSubfolders.checkBox.label": {
+    "message": "Include Subfolders",
+    "description": "The label of the check box to select if subfolders shall be considered."
+  },
+  "includeSubfolders.info.toolTip": {
+    "message": "If checked, messages in subfolders will also be marked as read.",
+    "description": "The tool tip info message to describe the check box."
+  },
+  
+  "saveOptionsButton.label": {
+    "message": "Save",
+    "description": "Label for the button to save everything in the options panel."
+  }
+}

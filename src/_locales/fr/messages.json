@@ -1,0 +1,74 @@
+{
+  "extensionName": {
+    "message": "Marquer automatiquement les dossiers comme lus",
+    "description": "Name of the extension."
+  },
+  "extensionShortName": {
+    "message": "AutoMarkRead",
+    "description": "Short name of the extension."
+  },
+  "extensionDescription": {
+    "message": "Les nouveaux messages dans les dossiers standards choisis sont automatiquement marqués comme lus.",
+    "description": "Description of the extension."
+  },
+
+  "commonFoldersCheckboxes.header": {
+    "message": "Dossier standard:",
+    "description": "The header (title) of the check box area where to choose common folders."
+  },
+  "commonFoldersCheckboxes.info.toolTip": {
+    "message": "Sélection des dossiers dans lesquels les messages sont automatiquement marqués comme lus.",
+    "description": "The text of the info tool tip."
+  },
+  "commonFoldersCheckboxes.info.toolTip.footNote": {
+    "message": "<br/><br/>Remarque: Les noms indiqués ici sont des identifiants pour des dossiers standards.<br/>Les noms réels des dossiers peuvent être différents.<br/>Les noms réels des dossiers standards sont configurables dans les paramètres du compte.",
+    "description": "The foot note of the info tool tip."
+  },
+
+  "commonFoldersCheckboxes.checkBox.inbox": {
+    "message": "Courrier entrant",
+    "description": "The label of a common folder check box."
+  },
+  "commonFoldersCheckboxes.checkBox.drafts": {
+    "message": "Brouillons",
+    "description": "The label of a common folder check box."
+  },
+  "commonFoldersCheckboxes.checkBox.sent": {
+    "message": "Envoyés",
+    "description": "The label of a common folder check box."
+  },
+  "commonFoldersCheckboxes.checkBox.trash": {
+    "message": "Corbeille",
+    "description": "The label of a common folder check box."
+  },
+  "commonFoldersCheckboxes.checkBox.templates": {
+    "message": "Modèles",
+    "description": "The label of a common folder check box."
+  },
+  "commonFoldersCheckboxes.checkBox.archives": {
+    "message": "Archives",
+    "description": "The label of a common folder check box."
+  },
+  "commonFoldersCheckboxes.checkBox.junk": {
+    "message": "Indésirables",
+    "description": "The label of a common folder check box."
+  },
+  "commonFoldersCheckboxes.checkBox.outbox": {
+    "message": "Messages en attente",
+    "description": "The label of a common folder check box."
+  },
+  
+  "includeSubfolders.checkBox.label": {
+    "message": "Inclusion des sous-dossiers",
+    "description": "The label of the check box to select if subfolders shall be considered."
+  },
+  "includeSubfolders.info.toolTip": {
+    "message": "Si cette option est cochée, les messages des sous-dossiers seront également marqués comme lus.",
+    "description": "The tool tip info message to describe the check box."
+  },
+  
+  "saveOptionsButton.label": {
+    "message": "Enregistrer",
+    "description": "Label for the button to save everything in the options panel."
+  }
+}

@@ -18,7 +18,7 @@ form {
 }
 .commonFolders .header .info.tooltip:hover span {
   width: 30em;
-  top: -2em;
+  top: -1.8em;
   font:normal;
   font-weight: normal;
 }
@@ -49,7 +49,7 @@ form .saveButton {
 }
 
 span.info {
-  background:url('info-icon.png') no-repeat;
+  background:url('../img/info-icon.png') no-repeat;
   background-size: 16px 16px;
   display: inline-block;
   height: 16px;

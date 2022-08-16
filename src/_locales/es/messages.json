@@ -1,0 +1,74 @@
+{
+  "extensionName": {
+    "message": "Marcar una carpeta automáticamente como leída",
+    "description": "Name of the extension."
+  },
+  "extensionShortName": {
+    "message": "AutoMarkRead",
+    "description": "Short name of the extension."
+  },
+  "extensionDescription": {
+    "message": "Mensajes nuevos se marcan automáticamente como leídos en carpetas estándar seleccionadas.",
+    "description": "Description of the extension."
+  },
+
+  "commonFoldersCheckboxes.header": {
+    "message": "Carpetas estándar:",
+    "description": "The header (title) of the check box area where to choose common folders."
+  },
+  "commonFoldersCheckboxes.info.toolTip": {
+    "message": "Selección de carpetas en las que los mensajes se marcan automáticamente como leídos.",
+    "description": "The text of the info tool tip."
+  },
+  "commonFoldersCheckboxes.info.toolTip.footNote": {
+    "message": "<br/><br/>Noticia: Los nombres mostrados aquí son identificadores de carpetas estandar.<br/>Los nombres reales de las carpetas pueden ser diferentes.<br/>Los nombres reales de las carpetas estandar son ajustables en la configuración de la cuenta.",
+    "description": "The foot note of the info tool tip."
+  },
+
+  "commonFoldersCheckboxes.checkBox.inbox": {
+    "message": "Bandeja de entrada",
+    "description": "The label of a common folder check box."
+  },
+  "commonFoldersCheckboxes.checkBox.drafts": {
+    "message": "Boradores",
+    "description": "The label of a common folder check box."
+  },
+  "commonFoldersCheckboxes.checkBox.sent": {
+    "message": "Enviados",
+    "description": "The label of a common folder check box."
+  },
+  "commonFoldersCheckboxes.checkBox.trash": {
+    "message": "Papelera",
+    "description": "The label of a common folder check box."
+  },
+  "commonFoldersCheckboxes.checkBox.templates": {
+    "message": "Plantillas",
+    "description": "The label of a common folder check box."
+  },
+  "commonFoldersCheckboxes.checkBox.archives": {
+    "message": "Archivos",
+    "description": "The label of a common folder check box."
+  },
+  "commonFoldersCheckboxes.checkBox.junk": {
+    "message": "Correo no deseado",
+    "description": "The label of a common folder check box."
+  },
+  "commonFoldersCheckboxes.checkBox.outbox": {
+    "message": "Bandeja de salida",
+    "description": "The label of a common folder check box."
+  },
+  
+  "includeSubfolders.checkBox.label": {
+    "message": "Incluir subcarpetas",
+    "description": "The label of the check box to select if subfolders shall be considered."
+  },
+  "includeSubfolders.info.toolTip": {
+    "message": "Si se marca, los mensajes que se encuentren en las subcarpetas también se marcarán como leídos.",
+    "description": "The tool tip info message to describe the check box."
+  },
+  
+  "saveOptionsButton.label": {
+    "message": "Guardar",
+    "description": "Label for the button to save everything in the options panel."
+  }
+}
