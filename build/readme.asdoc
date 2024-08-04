@@ -1,0 +1,9 @@
+This folder contains release packages. Each file corresponds to a release. The package is a normal zip file that can be installed with Thunderbird as an add-on.
+
+Creating a release:
+* Create a branch named release-x.xx (x.xx is the new release version).
+* Merge all changes into this release branch.
+* Update/Increase the "version" field in the file src/manifest.json.
+* Create a new release package "AutoMarkFolderRead-x.xx.xpi" in the "build" folder.
+* Merge the release branch into the master branch.
+* Upload the release package to addons.thunderbird.net.
