@@ -5,6 +5,33 @@ form {
   
 }
 
+label {
+  color: black;
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: #23222b;
+  }
+  label {
+    color: #b3b9c4;
+  }
+  span {
+    color: #bcc4c9;
+  }
+  .info.tooltip:hover > span:first-child {
+    background-color: #060507;
+  }
+  .info.tooltip:hover > span:first-child,
+  .info.tooltip:hover > span:first-child span {
+    color: #d1d1d1;
+  }
+}
+
 .commonFolders {
   
 }
@@ -75,7 +102,7 @@ span.tooltip:hover > span:first-child {
   padding: 7px 10px 7px 13px;
   display: block;
   z-index: 100;
-  background: #ffe179;
+  background-color: #ffe179;
   left: 1em;
   margin: 15px;
   width: 400px;

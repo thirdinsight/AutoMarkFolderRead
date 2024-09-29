@@ -11,9 +11,12 @@ application_name="AutoMarkFolderRead"
 # if we are in a release branch ...
 branch_name=$(git rev-parse --abbrev-ref HEAD)
 if [[ $branch_name == *"release"* ]]; then
+  # ... then retrieve the release version number from the addon's manifest
+  release_version=$(cat src/manifest.json | jq -r '.version')
+  
   # ... then cut out and save the release version number
   # example: release-1.01 will cut out 1.01
-  release_version=$(echo $branch_name | cut -f2 -d"-")
+  # release_version=$(echo $branch_name | cut -f2 -d"-")
 fi
 echo Release Version is "'$release_version'"
 
