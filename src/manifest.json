@@ -10,7 +10,8 @@
     "applications": {
         "gecko": {
             "id": "autoMarkFolderRead.silvester@addons.thunderbird.net",
-            "strict_min_version": "91.0"
+            "strict_min_version": "91.0",
+			"strict_max_version": "115.*"
         }
     },
 	"background": {
