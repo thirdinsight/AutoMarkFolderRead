@@ -27,5 +27,10 @@ Or take the already zipped release version from the `+build+` subfolder.
 The default configuration is that the following common folders remain marked as read: junk, trash, drafts, templates.
 Which common folders should be taken into account can be configured in the `Add-on Options` panel.
 
+*Important:* +
+If you are using Thunderbird until version 121 then use the latest v1.5.* release of the add-on.
+
+For Thunderbird 122 and above use the add-on version 1.6 or later.
+
 == Additional Information
 This project has no license and lies in the public domain.
